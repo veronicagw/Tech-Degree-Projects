@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -17,15 +17,16 @@ a {
   text-decoration: none;
   color: #999;
 }
+
 a:hover {
-  color: #6633ff;
+  color: #9BFFC7;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: white;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +44,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: black;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,12 +53,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #9BFFC7;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/toronto.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -83,10 +84,10 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -99,7 +100,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #9BFFC7;
 }
 
 ul.skills {
@@ -169,10 +170,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +205,3 @@ a.social:hover {
   }
 
 }
-
