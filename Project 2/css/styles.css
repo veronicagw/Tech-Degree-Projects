@@ -1,0 +1,310 @@
+#tablet-footer {
+  display: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/*nav*/
+header {
+  background-color: #fafafa;
+  min-width: 100%;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+h1 {
+  font: 700 1.5rem/15px 'Merriweather', serif;
+  margin: 0 0 5vh 0;
+}
+
+header p {
+  font: 400 0.95rem/25px 'Open Sans', sans-serif;
+  margin: 1vh 8vw;
+  color: grey;
+}
+
+a {
+  font: 700 0.9rem/10px 'Open Sans', sans-serif ;
+  list-style: none;
+  text-align:center;
+  display: block;
+  padding: 3vh 0;
+  text-decoration: none;
+  color: #4a4a4a;
+  background-color: bisque;
+  margin: 1vh 5vw;
+}
+
+a:hover {
+  color: cadetblue;
+}
+/*Intro*/
+#profile {
+  width: 80%;
+  margin: 8vh 0 3vh 0;
+}
+
+/*Portfolio*/
+.wrapper {
+  margin: 7vh 4vw 15vh 4vw;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 5vh;
+  color: cadetblue;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font: 400 1.2rem/20px 'Open Sans', sans-serif;
+  margin-top: 5vh;
+}
+
+p {
+  font: 400 0.9rem/24px 'Open Sans', sans-serif;
+  margin: 1vh 5vw 5vh 5vw;
+}
+
+/*Contact*/
+#contact {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 7vh 4vh 10vh 4vh;
+}
+
+.line {
+  background-color: lightgrey;
+  padding-bottom: 1px;
+  margin-top: 10vh;
+}
+
+#contact p {
+  margin: 1vh 5vw 2vh 5vw;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 0.9rem;
+  float: left;
+  margin: 0;
+  padding: 3vh 0 0 0;
+}
+
+footer a {
+  display: inline-block;
+  background-color: inherit;
+  margin: 0;
+  font-size: 0.8rem;
+  float: right;
+  padding: 3vh 0 0 0;
+}
+
+/*MEDIA QUERY STARTS*/
+@media (min-width: 768px) {
+    #mobile-footer {
+      display: none;
+    }
+
+    #tablet-footer {
+      display: inherit;
+    }
+/*nav*/
+    nav a {
+      display: inline-block;
+      background-color: inherit;
+      margin-bottom: 2vh;
+      margin: 1vh 3vw;
+    }
+
+    h1 {
+      margin-bottom: 0.3vh;
+    }
+/*intro*/
+    picture {
+      display: inline-block;
+      margin:0;
+      width: 40%;
+      float: right;
+    }
+
+    header p {
+      display: inline-block;
+      vertical-align: top;
+      float:left;
+      text-align: left;
+      margin: 0;
+      width: 56%;
+      font: 400 1.1rem/25px 'Open Sans', sans-serif;
+    }
+
+    #intro img {
+      margin: 0;
+      width: 100%;
+    }
+
+    #intro {
+      margin: 0 5vw 0 5vw;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+/*column*/
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight {
+      display: inline-block;
+      width: 48%;
+    }
+
+    #one,
+    #three,
+    #five,
+    #seven {
+      padding-right: 2%;
+    }
+
+    h3 {
+      margin-top: 3vh;
+    }
+    p {
+      font: 400 0.8rem/20px 'Open Sans', sans-serif;
+      margin: 0.5vh 4vw 4vh 4vw;
+    }
+
+    .wrapper {
+        margin: 7vh 4vw 2vh 4vw;
+    }
+
+    #contact {
+        padding: 4vh 4vh 10vh 4vh;
+    }
+
+    #contact p {
+      font: 400 1rem/25px 'Open Sans', sans-serif;
+      margin: 3vh 15vw;
+    }
+
+    .footer-pad{
+      padding-right: 5%;
+    }
+
+    .line {
+      margin-top: 5vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+      display: inline-block;
+      width: 40%;
+      text-align: left;
+      float: left;
+    }
+
+    nav {
+      display: inline-block;
+      text-align: right;
+      width: 50%;
+      float: right;
+    }
+
+    nav a {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-pad{
+      padding: 0 3vw 0 0;
+    }
+
+    .desktop-intro {
+      margin: 0 5vw 2vh 5vw;
+    }
+
+    body {
+      background-color: #fafafa;
+    }
+
+    .wrapper {
+      background-color: white;
+      padding: 3vh 1vw;
+      margin-top: 0;
+    }
+
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight {
+      display: inline-block;
+      width: 32%;
+    }
+
+    #one,
+    #two,
+    #four,
+    #five,
+    #seven {
+      padding-right: 1%;
+    }
+
+    #three,
+    #six {
+      padding-right: 0;
+    }
+
+    p {
+      margin: 0.5vh 1vw 4vh 1vw;
+    }
+
+    #portfolio {
+      margin-bottom: 4vh;
+    }
+
+    #contact {
+      padding: 2vh 10vh 10vh 10vh;
+    }
+
+    #contact p {
+      margin: 2vh 15vw;
+    }
+
+    h4 {
+      padding: 3% 0% 0% 0%;
+    }
+
+    footer a {
+      padding: 4% 0;
+    }
+}
+
+@media (min-width: 1280px) {
+  .desktop-intro {
+    margin: 2vh 5vw 5vh 5vw;
+  }
+
+  p {
+    margin: 0.5vh 0 4vh 0;
+  }
+}
