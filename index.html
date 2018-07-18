@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 3's Form </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+</head>
+<body>
+<!--title start-->
+<header>
+  <h1>THE CODE REVIEW</h1>
+</header>
+
+<!--signup start-->
+<div class="title">
+  <h2>Signup for our newsletter</h2>
+  <p>Get the latest news on how your code is doing right in your inbox</p>
+</div>
+
+<div id="double-line" class="margin"></div>
+<!--signup end-->
+
+<!--contact start-->
+<div class="contact left-align margin">
+    <h3>Contact Information</h3>
+    <form action="index.html" method="post" class="form_container">
+      <span class="row">
+      <label for="name" class="form_label">Full Name</label>
+      <input required type="text" id="name" name="full_name" placeholder="Required" class="input_field">
+      </span>
+      <span class="row">
+      <label for="email" class="form_label">Email Address</label>
+      <input required type="email" id="email" name="email_address" placeholder="Required" class="input_field">
+      </span>
+      <span class="row">
+      <label for="number" class="form_label">Phone Number</label>
+      <input type="tel" id="number" name="phone_number" class="input_field">
+      </span>
+      <span class="row">
+      <label for="address" class="form_label">Street Address</label>
+      <input type="text" id="address" name="street_address" class="input_field">
+      </span>
+      <span class="row">
+      <label for="city" class="form_label">City</label>
+      <input type="text" id="city" name="user_city" class="input_field">
+      </span>
+      <span class="row">
+      <label for="food" class="form_label">Favorite Food</label>
+      <input type="text" id="food" name="favorite" class="input_field">
+      </span>
+      <span class="row">
+      <label for="state" class="form_label">State</label>
+      <select id="state" name="user_state" class="input_field">
+        <option value="" disabled selected>Choose State</option>
+        <option value="stateone">State One</option>
+        <option value="statetwo">State Two</option>
+        <option value="statethree">State Three</option>
+      </select>
+      </span>
+      <span class="row zip">
+      <label for="zip" class="form_label">Zip Code</label>
+      <input type="text" id="zip" name="zip_code" class="input_field">
+      </span>
+    </form>
+</div>
+<!--contact end-->
+
+<div id="line" class="margin"></div>
+
+<!--newsletter start-->
+
+<div class="newsletter left-align margin">
+    <h3>Newsletter</h3>
+    <p class="left-align">Select the newsletters you would like to receive</p>
+    <form action="index.html" method="post">
+      <div>
+      <label>
+      <input type="checkbox" value="news_html" name="newsletter">
+      HTML News</label>
+      </div>
+      <div>
+      <label>
+      <input type="checkbox" value="news_css" name="newsletter">
+      CSS News</label>
+      </div>
+      <div>
+      <label>
+      <input type="checkbox" value="news_javascript" name="newsletter">
+      Javascript News</label>
+      </div>
+  <!--Newsletter Format Begin-->
+    <p class="left-align">Newsletter format</p>
+      <div>
+      <label>
+      <input type="radio" value="news_html" name="format">
+      HTML</label>
+      </div>
+      <div>
+      <label>
+      <input type="radio" value="format_plain" name="format">
+      Plain text</label>
+    </div>
+    <p class="left-align">Other topics you'd like to hear about</p>
+    <textarea id="javascript" name="javascript"></textarea>
+      </form>
+</div>
+<!--newsletter end-->
+
+<!--submit start-->
+<div class="margin">
+<button type="submit">Sign Up</button>
+</div>
+<!--submit end-->
+
+<!--footer start-->
+<footer>Copyright The Code Review</footer>
+<!--footer end-->
+</body>
+</html>
