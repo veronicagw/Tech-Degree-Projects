@@ -1,0 +1,32 @@
+body {
+    font-family: $font;
+}
+
+p {
+  color: $text-color; /*text color variable*/
+  line-height: 150%;
+  font-weight: 300;
+}
+
+.container {
+  padding: 5vh 8vw;
+}
+
+.link {
+  @extend %nodecoration;
+  color: $color-secondary; /*secondary color variable*/
+  font-weight: 400;
+  margin: auto;
+}
+
+/*-----------desktop------------*/
+
+@include media (desktop) {
+  .container {
+    padding: 5vh 15vw;
+  }
+
+  p {
+    line-height: 170%;
+  }
+}

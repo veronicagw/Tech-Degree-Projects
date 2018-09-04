@@ -1,0 +1,21 @@
+  .img--avatar {
+    align-self: center;
+    margin-top: 5vh;
+  }
+
+  .img--frame {
+    border: 1px solid lightgrey;
+    padding: 2vw;
+  }
+
+/*-----------desktop------------*/
+
+  @include media (desktop) {
+    .img--avatar {
+      margin-top: 0;
+    }
+
+    .img--frame {
+      margin-left: 3vw;
+    }
+  }

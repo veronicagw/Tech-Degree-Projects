@@ -1,0 +1,14 @@
+@mixin media ($point) {
+  @if $point == desktop {
+    @media (min-width: $breakpoint-desktop) {@content;}
+  }
+  @else if $point == mobile {
+    @media (min-width: 0px) {@content;}
+  }
+}
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  @content;
+}

@@ -1,0 +1,40 @@
+.headline--primary {
+  color: $text-color; /*primary color variable*/
+  padding-left: 5vw;
+}
+
+.headline--secondary {
+    color: $text-color;
+    margin: 5vh 0;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.blockquote {
+  font: italic 400 1.2rem/28px $blockquote-font;
+  color: $text-color;
+  border-left: 8px solid $color-primary; /*primary color variable*/
+  padding-left: 5%;
+  border-radius: 5px;
+}
+
+/*-----------desktop------------*/
+
+@include media (desktop) {
+.headline--primary {
+  padding-left: 1vw;
+}
+
+.headline--secondary {
+  margin-top: 0;
+  margin-bottom: 2vh;
+}
+
+.card {
+  @include flexbox {
+  flex-direction: column;
+  margin-right: 1vw;
+  }
+}
+
+}

@@ -1,0 +1,361 @@
+/*--Global Imports--*/
+/*--STYLE--*/
+/* line 4, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/utilities/_extends.scss */
+.link, .nav__item a:link, .nav__item a:visited {
+  text-decoration: none;
+}
+
+/*--BASE--*/
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 5, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+p {
+  color: grey;
+  /*text color variable*/
+  line-height: 150%;
+  font-weight: 300;
+}
+
+/* line 11, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+.container {
+  padding: 5vh 8vw;
+}
+
+/* line 15, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+.link {
+  color: #55defd;
+  /*secondary color variable*/
+  font-weight: 400;
+  margin: auto;
+}
+
+/*-----------desktop------------*/
+@media (min-width: 769px) {
+  /* line 25, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+  .container {
+    padding: 5vh 15vw;
+  }
+  /* line 29, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/base/_base.scss */
+  p {
+    line-height: 170%;
+  }
+}
+
+/*--COMPONENTS--*/
+/* line 2, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  display: block;
+  width: 100%;
+  color: white;
+}
+
+/* line 11, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--default {
+  background-color: #55defd;
+}
+
+/* line 14, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--success {
+  background-color: #80c989;
+}
+
+/* line 17, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--error {
+  background-color: #d57b7d;
+}
+
+/* line 20, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--warning {
+  background-color: #eb7f5f;
+}
+
+/* line 23, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.btn--info {
+  background-color: #8e7dbc;
+}
+
+/* line 28, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+.theme__colors {
+  border: none;
+  border-radius: 3px;
+  height: 4vh;
+  text-transform: uppercase;
+  margin-top: 2vh;
+  padding-left: 3%;
+  font-size: 0.8rem;
+  line-height: 4vh;
+}
+
+@media (min-width: 769px) {
+  /* line 41, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+  .btn--default,
+  .theme__colors {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    flex: 1;
+  }
+  /* line 50, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_button.scss */
+  .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+    flex-grow: 1;
+    height: 4vh;
+    margin: 0 1vw 2vh 1vw;
+  }
+}
+
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+.headline--primary {
+  color: grey;
+  /*primary color variable*/
+  padding-left: 5vw;
+}
+
+/* line 6, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+.headline--secondary {
+  color: grey;
+  margin: 5vh 0;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+/* line 13, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+.blockquote {
+  font: italic 400 1.2rem/28px "Open Sans", sans-serif;
+  color: grey;
+  border-left: 8px solid #58e1c1;
+  /*primary color variable*/
+  padding-left: 5%;
+  border-radius: 5px;
+}
+
+/*-----------desktop------------*/
+@media (min-width: 769px) {
+  /* line 24, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+  .headline--primary {
+    padding-left: 1vw;
+  }
+  /* line 28, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+  .headline--secondary {
+    margin-top: 0;
+    margin-bottom: 2vh;
+  }
+  /* line 33, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_typography.scss */
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1vw;
+  }
+}
+
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_form.scss */
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 7, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_form.scss */
+.form__label--hidden {
+  display: none;
+}
+
+/* line 11, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_form.scss */
+.form__input {
+  border: none;
+  border-bottom: 5px solid #58e1c1;
+  /*primary color variable*/
+  padding: 1.5vh 3vw;
+  margin: 1vh 1vw;
+}
+
+/*-----------desktop------------*/
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__row {
+  margin-bottom: 5vh;
+  color: grey;
+}
+
+/* line 7, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--12.theme__colors {
+  background-color: #84e7d1;
+}
+
+/* line 10, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--6.theme__colors {
+  background-color: #60a9c6;
+}
+
+/* line 13, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--4.theme__colors {
+  background-color: #55defd;
+}
+
+/* line 16, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--3.theme__colors {
+  background-color: #d6b4ea;
+}
+
+/* line 19, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--5.theme__colors {
+  background-color: #80c989;
+}
+
+/* line 22, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--7.theme__colors {
+  background-color: #d57b7d;
+}
+
+/* line 25, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__col--8.theme__colors {
+  background-color: #eb7f5f;
+}
+
+/* line 31, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+.grid__row, .grid__col--6, .grid__col--3, .grid__col--5, .grid__col--7 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*-----------desktop------------*/
+@media (min-width: 769px) {
+  /* line 46, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__row {
+    flex-direction: row;
+    margin: 0;
+  }
+  /* line 51, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--3 {
+    margin-right: auto;
+  }
+  /* line 55, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--12 {
+    display: flex;
+    justify-content: center;
+    margin: 1vh 5vw 2vh 5vw;
+    flex: 1;
+  }
+  /* line 62, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--12 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-right: 3vw;
+  }
+  /* line 71, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .theme__colors {
+    margin: 1vh 1vw 2vh 0;
+    text-align: center;
+    padding-left: 0;
+    flex: 1;
+  }
+  /* line 78, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--6,
+  .grid__col--4,
+  .grid__col--3,
+  .grid__col--5 {
+    flex: 1;
+    padding: 0;
+  }
+  /* line 86, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--7,
+  .grid__col--8 {
+    flex: 2;
+  }
+  /* line 91, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .grid__col--9 {
+    margin-top: 1vh;
+  }
+  /* line 95, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_grid.scss */
+  .centered {
+    margin: 1vh 9vw 3vh 9vw;
+  }
+}
+
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+.nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10vh;
+}
+
+/* line 8, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+.nav__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 6vh;
+}
+
+/* line 15, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+.nav__item:hover {
+  /* &:hover */
+  background-color: #58e1c1;
+  /*color variable*/
+  border-radius: 3px;
+}
+
+/* line 21, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+.nav__item a:link, .nav__item a:visited {
+  /* nest inside nav__item*/
+  color: grey;
+}
+
+/* line 27, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+.nav__item a:hover {
+  /* nest inside nav__item*/
+  color: white;
+}
+
+/*-----------desktop------------*/
+@media (min-width: 769px) {
+  /* line 38, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+  .nav {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-right: 3vw;
+  }
+  /* line 47, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_nav.scss */
+  .nav__item {
+    flex-grow: 1;
+    margin-right: 2vw;
+    padding: 0 1vw;
+    height: 5vh;
+  }
+}
+
+/* line 1, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_image.scss */
+.img--avatar {
+  align-self: center;
+  margin-top: 5vh;
+}
+
+/* line 6, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_image.scss */
+.img--frame {
+  border: 1px solid lightgrey;
+  padding: 2vw;
+}
+
+/*-----------desktop------------*/
+@media (min-width: 769px) {
+  /* line 14, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_image.scss */
+  .img--avatar {
+    margin-top: 0;
+  }
+  /* line 18, /Users/veronicawong/Desktop/Tech-Degree-Projects/Project 4/scss/components/_image.scss */
+  .img--frame {
+    margin-left: 3vw;
+  }
+}
+
+/*# sourceMappingURL=../css/styles.map */

@@ -1,0 +1,99 @@
+.grid__row {
+  margin-bottom: 5vh;
+  color: grey;
+}
+
+.grid__ {
+  &col--12.theme__colors {
+    background-color: $turq;
+  }
+  &col--6.theme__colors {
+    background-color: $dark-blue;
+  }
+  &col--4.theme__colors {
+    background-color: $color-secondary;
+  }
+  &col--3.theme__colors {
+    background-color: $light-purple;
+  }
+  &col--5.theme__colors {
+    background-color: $green;
+  }
+  &col--7.theme__colors {
+    background-color: $red;
+  }
+  &col--8.theme__colors {
+    background-color: $orange;
+  }
+}
+
+.grid__ {
+  &row,
+  &col--6,
+  &col--3,
+  &col--5,
+  &col--7 {
+  @include flexbox {
+  flex-direction: column;
+  }
+}
+
+}
+
+/*-----------desktop------------*/
+
+@include media (desktop) {
+  .grid__row {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .grid__col--3 {
+    margin-right: auto;
+  }
+
+  .grid__col--12 {
+    @include flexbox {
+    margin: 1vh 5vw 2vh 5vw;
+    flex: 1;
+    }
+  }
+
+  .grid__col--12 {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-right: 3vw;
+  }
+
+  .theme__colors {
+      margin: 1vh 1vw 2vh 0;
+      text-align: center;
+      padding-left: 0;
+      flex: 1;
+  }
+
+  .grid__col--6,
+  .grid__col--4,
+  .grid__col--3,
+  .grid__col--5 {
+    flex: 1;
+    padding: 0;
+  }
+
+  .grid__col--7,
+  .grid__col--8 {
+    flex: 2;
+  }
+
+  .grid__col--9 {
+    margin-top: 1vh;
+  }
+
+  .centered {
+    margin: 1vh 9vw 3vh 9vw;
+  }
+
+}

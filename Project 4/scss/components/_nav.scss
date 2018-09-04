@@ -1,0 +1,53 @@
+.nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10vh;
+}
+
+.nav__item {
+  @include flexbox {
+  flex-direction: column;
+  height: 6vh;
+  }
+}
+
+.nav__item:hover { /* &:hover */
+  background-color: $color-primary; /*color variable*/
+  border-radius: 3px;
+}
+
+.nav__item a {
+  &:link,
+  &:visited { /* nest inside nav__item*/
+    @extend %nodecoration;
+    color: $text-color;
+  }
+
+  &:hover { /* nest inside nav__item*/
+    color: white;
+  }
+}
+
+
+
+
+/*-----------desktop------------*/
+
+@include media (desktop) {
+  .nav {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      margin-right: 3vw;
+  }
+
+  .nav__item {
+    flex-grow: 1;
+    margin-right: 2vw;
+    padding: 0 1vw;
+    height: 5vh;
+  }
+}

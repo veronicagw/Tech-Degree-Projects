@@ -1,0 +1,60 @@
+.btn-- {
+  &default,
+  &success,
+  &error,
+  &warning,
+  &info {
+    display: block;
+    width: 100%;
+    color: white;
+  }
+  &default {
+    background-color: $color-secondary;
+  }
+  &success {
+    background-color: $green;
+  }
+  &error {
+    background-color: $red;
+  }
+  &warning {
+    background-color: $orange;
+  }
+  &info {
+    background-color: $dark-purple;
+  }
+}
+
+.theme__colors  {
+  border: none;
+  border-radius: 3px;
+  height: 4vh;
+  text-transform: uppercase;
+  margin-top: 2vh;
+  padding-left: 3%;
+  font-size: 0.8rem;
+  line-height: 4vh
+}
+
+
+@include media (desktop) {
+  .btn--default,
+  .theme__colors {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    flex: 1;
+  }
+
+  .btn-- {
+    &default,
+    &success,
+    &error,
+    &warning,
+    &info {
+      flex-grow: 1;
+      height: 4vh;
+      margin: 0 1vw 2vh 1vw;
+    }
+  }
+}
